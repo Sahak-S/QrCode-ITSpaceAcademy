@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.w3.org/1999/xhtml">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center;">Qr Code օրինակ՝ օգտագործելով Java Spring boot</h1>
+
+<!--<div style="width:40%;display: inline-block">-->
+<!--    <h3>Qr կոդ՝ օգտագործելով բայթ զանգված </h3>-->
+<!--    <p>Data : <span th:text="${medium}"></span></p>-->
+<!--    <img th:src="${'data:image/png;base64,' + qrcode}" alt="" height="250" width="250">-->
+<!--</div>-->
+
+<div style="width:40%;display: inline-block;">
+    <h3>Qr կոդը որպես պատկեր ITSpace</h3>
+    <p>Data : <span th:text="${facebook}"></span></p>
+    <img th:src="@{/img/IT.png}" height="250" width="250"/>
+</div>
+<p>Նշում. Դուք կարող եք փոխել QR կոդի ֆոնի և առաջին պլանի գույնը QRCodeGenerator դասում</p>
+
+</body>
+</html>
